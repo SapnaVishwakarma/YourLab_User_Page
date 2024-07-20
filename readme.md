@@ -11,26 +11,7 @@ This project is a responsive doctor appointment booking form built using Next.js
 - Node.js
 - npm or yarn
 
-### Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
-    ```
 
-2. Install dependencies:
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-3. Run the development server:
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    ```
 
 ### Forking and Making Changes
 1. Fork the repository on GitHub by clicking the "Fork" button at the top right of the repository page.
