@@ -18,7 +18,7 @@ This project is a responsive doctor appointment booking form built using Next.js
 
 2. Clone your forked repository:
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/YouLab2024/YourLab_User_Page.git)
+    git clone https://github.com/YouLab2024/YourLab_User_Page.git
     cd your-repo-name
     ```
 
