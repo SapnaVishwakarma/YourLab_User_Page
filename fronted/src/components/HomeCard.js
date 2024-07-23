@@ -47,7 +47,7 @@ const HomeCard = () => {
   }
 
   return (
-    <div className="flex items-center mt-[3rem] justify-center xs:mt-8">
+    <div className="mt-[3rem] xs:mt-8">
       {cardData.map((cardItem, index) => (
         <div
           className={index === current ? "flex items-center justify-center slide active" : "slide"}
