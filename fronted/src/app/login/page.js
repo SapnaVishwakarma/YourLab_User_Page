@@ -27,7 +27,7 @@ export default function LoginForm() {
             <input
               type={showPassword ? 'text' : 'password'}
               placeholder="Enter Your Password"
-              className="w-full p-2 border rounded-lg pr-10 text-black"  // Add pr-10 for padding-right to accommodate the eye icon
+              className="w-full p-2 border rounded-lg pr-10 text-black"  
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -45,7 +45,7 @@ export default function LoginForm() {
             </button>
           </div>
           <div className="flex justify-end mb-4">
-            <a href="/forgot-password" className="text-red-600 text-sm">Forgot Password?</a>
+            <a href="/forget" className="text-red-600 text-sm">Forgot Password?</a>
           </div>
           <button className="w-full p-2 bg-teal-600 text-white rounded-lg mb-6">Login</button>
           <div className="text-center text-gray-500 mb-6">

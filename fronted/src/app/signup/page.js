@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link'; 
 
-export default function SignupForm() {
+export default function signup() {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
@@ -18,7 +18,7 @@ export default function SignupForm() {
       <div className="w-full max-w-md bg-white p-8 rounded shadow-md">
         <h1 className="font-extrabold text-3xl text-gray-950 font-bold mb-4 text-center">Create an Account</h1>
         <form>
-          <div className="mb-4">
+          <div className="mb-6 text-black">
             <input
               type="email"
               placeholder="Enter Your Email"
@@ -27,7 +27,7 @@ export default function SignupForm() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-6 text-black">
             <input
               type="tel"
               placeholder="Enter Your Phone Number"
@@ -36,7 +36,7 @@ export default function SignupForm() {
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
-          <div className="mb-4 relative">
+          <div className="mb-6 relative text-black">
             <input
               type={showPassword ? 'text' : 'password'}
               placeholder="Enter Your Password"
@@ -57,15 +57,21 @@ export default function SignupForm() {
               />
             </button>
           </div>
-          <button className="w-full p-2 bg-teal-600 text-white rounded-lg mb-8">Sign Up</button>
+          <button className="w-full p-2 bg-teal-600 text-white rounded-lg mb-9">Sign up</button>
+          <div className="text-center text-gray-500 mb-6">
+            _____________or With_____________
+          </div>
           <button className="w-full p-2 bg-white text-gray-500 border rounded-lg flex items-center justify-center mb-8">
-            <span className="absolute left-4">
-            <img src="/google-logo.png" alt="Google Logo" className="mr-4" width="20" height="20" />
-            </span>
-            <span className="mx-auto">Sign Up with Google</span>
+
+            
+            
+              <img src="/google-logo.png" alt="Google Logo" width="20" height="20" className="mr-2" />
+            
+            <span className="mx-auto">Sign up with Google</span>
           </button>
           <div className="text-center">
-              <Link href="/login" className="text-black">Already have an account? Log In</Link>
+            <span className="text-black">Already have an account? </span>
+              <Link href="/" className="text-blue-800">Log In</Link>
                </div>
         </form>
       </div>

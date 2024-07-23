@@ -1,12 +1,12 @@
 'use client';
 import { useState } from 'react';
 
-export default function ForgotPassword() {
+
+export default function Forget() {
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add logic for handling password reset here
     console.log('Email submitted:', email);
   };
 
@@ -15,7 +15,7 @@ export default function ForgotPassword() {
       <div className="w-full max-w-md bg-white p-8 rounded shadow-md">
         <h1 className="font-extrabold text-3xl text-gray-950 font-bold mb-6 text-center">Forget Password</h1>
         <form onSubmit={handleSubmit}>
-          <div className="mb-6">
+          <div className="mb-6 text-black">
             <label className="font-bold mb-2 text-gray-950">Email</label>
             <input
               type="email"
